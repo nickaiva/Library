@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    /*border: aqua 1px solid;*/
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#view {
+
+
+    /*display: flex;*/
+    margin: auto;
+}
+
+#newBook {
+    color:brown;
+   
+}
+
+table,
+td {
+
+    border: 1px solid brown;
+}
+
+.fa-check {
+    color:green;
+    transition: 0.3s;
+}
+
+.fa-check:hover {
+    color: dark-green;
+}
+
+.fa-times,
+.fa-trash-alt {
+    color: red;
+    transition: 0.3s;
+}
+
+.fa-times:hover,
+.fa-trash-alt:hover {
+    color:dark-red;
+}
