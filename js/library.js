@@ -1,4 +1,7 @@
+
+'use strict';
 let myLibrary = [];
+
 class Book {
   constructor(title, author, pages, read) {
     this.title = title;
@@ -11,7 +14,18 @@ class Book {
     }
   }
 };
+/*
+function Book(title, author, pages, read){
+  this.title = title;
+  this.author = author;
+  this.pages = pages;
+  this.read = read;
+}
 
+Book.prototype.info = function(){
+  return `The book is ${this.title} by ${this.author} ,${this.pages}, ${this.read}.`;
+};
+*/
 if (localStorage.getItem('books') === null) {
   myLibrary = [];
 } else {
@@ -23,7 +37,7 @@ if (localStorage.getItem('books') === null) {
 function addBookToLibrary(title, author, pages, read) {
   const book = new Book(title, author, pages, read);
   //console.log('Adding ', book.info());
-  count = myLibrary.push(book);
+ let  count = myLibrary.push(book);
  
   localStorage.setItem('books', JSON.stringify(myLibrary));
   //console.log('myLibrary.length', myLibrary.length);
